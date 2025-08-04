@@ -2,6 +2,14 @@ import { useState } from 'react'
 import CustomForm from './components/CustomForm'
 import TaskList from './components/TaskList'
 
+/**
+ * React component that manages and displays a task list with add, delete, and toggle functionality.
+ *
+ * Renders a form for adding new tasks and a list of current tasks, allowing users to mark tasks as completed or remove them.
+ * Maintains the task list state internally.
+ *
+ * @returns {JSX.Element} The rendered task list application.
+ */
 function App() {
   const [tasks, setTasks] = useState([])
 
